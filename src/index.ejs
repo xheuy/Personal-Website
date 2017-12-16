@@ -5,22 +5,239 @@
     <%- include('ejs/head', {title: 'Cissy'}); %>
 </head>
 
-<body>
-    <!-- Main -->
-    <%- include('ejs/header'); %>
+<body class="">
+    <!-- Nav -->
+    <div id="nav_btn" class="nav-btn"></div>
+    <ul class="nav-menu">
+        <li>HOME</li>
+        <li>PORTFOLIO</li>
+        <li>ABOUT ME</li>
+        <li>COTACT</li>
+    </ul>
 
-    <div class="content">
-        
+    <!-- Profile -->
+    <div class="profile-bg"></div>
+
+    <!-- Content -->
+    <div class="main-content">
+        <!-- Profile -->
+        <div class="profile-desc">
+            <h1>Sixue Cheng</h1>
+            <h6>21-year old, Aquarius, Chinese Designer</h6>
+            <a href="static/SixueCheng_Resume.pdf">
+                <div class="download-cv">
+                    <img class="icon-dl" src="images/download.png" alt="Doenload">
+
+                    <span>Download Resume</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio-wrap">
+            <h3>PORTFOLIO</h3>
+            <div class="box left">
+                <div class="work no-1">
+                    <div class="title-wrap">
+                        Inductive Smart Headset
+                    </div>
+                </div>
+                <div class="work no-2">
+                    <div class="title-wrap">
+                        Walking Dog Product design<br/>Combine with VR Technology
+                    </div>
+                </div>
+                <div class="work no-3">
+
+                </div>
+            </div>
+            <div class="box right">
+                <div class="work no-4">
+                    <div class="title-wrap">
+                        Universal Product Design<br/>for European Refugees
+                    </div>
+                </div>
+                <div class="work no-5">
+                    <div class="title-wrap">
+                        Food Cooking Management<br/>System for Family
+                    </div>
+                </div>
+                <div class="work no-6">
+                    <div class="title-wrap">
+                        Other Projects
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anout Me -->
+        <section class="about-me">
+            <h3>ABOUT ME</h3>
+            <div class="desc-wrap">
+                <img class="bg" src="images/about_me1.jpg" alt="About Me">
+
+                <div class="desc-box">
+                    <p class="names">
+                        NAME: Sixue Cheng<br/>
+                        CHINESE VERSION: 程思雪<br/>
+                        JAPANESE VERSION: てしせつ
+                    </p>
+                    <ul class="desc-list">
+                        <li>A 21-year-old chinese girl from Beijing University of Technology.</li>
+                        <li>Love life.</li>
+                        <li>Love Hip-Hop.</li>
+                        <li>Love art.</li>
+                        <li>Love traveling by myself.</li>
+                        <li>Hope that I could have the<br/> honor to receive the offer from<br/> your school!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="story-box">
+                <h4>I WANT TO BE A DESIGNER BECAUSE I LOVE MY GRANDMA</h4>
+
+                <img class="about-me-2" src="images/about_me2.jpg" alt="Family">
+                <p>
+                    <em>The reason why I want to be a designer</em> is actually related to a story.
+                </p>
+                <p>
+                    Once I met a teacher, he told me about Alzheimer's design.<br/>
+                    Alzheimer is one thing I have kept in mind for a long peroid of time.<br/>
+                    A diary of mine:<br/>
+                    <span class="italic">
+                    "Granny has been died 12 years.<br/>
+                    I remember the last time I went back hometown before she died, her consciousness is still relatively clear. I just remember a lot of adults around her say that she often could not find the way to home. At that time I was too young, naive.  I had never thought she would leave me. Other relatives always said that she could live longer because she was in a quite healthy state.
+                    </span>
+                </p>
+                <p><span class="italic">
+                    But the next summer, she disappeared. It did not take long before knowing the news of her death.<br/>
+                    Years  passed, people became increasingly care about this illness. There are also many people advocate that we should not call it senile dementia (literal translation in Chinese)<br/>
+                    Sure, just due to its literal translation, Alzheimer's used to be a joke among many children. I really do not want to use these words when I related to my grandma. Is it a matter of  laking respect and understanding for those people who are suffering from such a condition?"
+                </span></p>
+                <p>
+                    I really care about this issue, but can not do anything. One day the teacher told me that although the design can not change the afflictions suffered by Alzheimer's disease, we can let the community around us understand and care for it more. He designed a headdress, wear it, people can feel the visual and auditory Alzheimer's patients.<br/>
+                    His design inspired me greatly. Design can not transform the world around, but it can change a group of people, even if only one individual, to change their perspectives, opinions, attitude toward life.The power of design can not be underestimated.
+                </p>
+            </div>
+
+            <div class="opinion-box">
+                <h4>MY UNDERSTANDING TOWARDS DESIGN</h4>
+
+                <p><em>Design is no way to change the world but it is magical because it can make people's lives better as a medium of technology and aesthetics.</em></p>
+
+                <p>
+                    <em>Design and technology are inseparable</em> for the fact that the design is prior to technology, it gives people the freedom to look forward to the future opportunities Also some cutting-edge technology could find a carrier to play a role in full response to user needs. This is the design of forward-looking.
+                </p>
+                <p>
+                    <em>Design and aesthetics are also inseparable.</em> Although I am not an art student, I usually like to learn some art related things. I believe I have the ability to make design that is in line with high technology and humanistic concern.
+                </p>
+            </div>
+
+            <div class="skills-box">
+                <h4>MY SKILLS</h4>
+
+                <div class="skill photoshop">
+                    <div class="title">Photoshop</div>
+                    <div class="bg-bar">
+                        <div class="percent bar"></div>
+                        <div class="percent txt">80%</div>
+                    </div>
+                </div>
+
+                <div class="skill illustrator">
+                    <div class="title">Illustrator</div>
+                    <div class="bg-bar">
+                        <div class="percent bar"></div>
+                        <div class="percent txt">95%</div>
+                    </div>
+                </div>
+
+                <div class="skill solid-works">
+                    <div class="title">Solid Works</div>
+                    <div class="bg-bar">
+                        <div class="percent bar"></div>
+                        <div class="percent txt">80%</div>
+                    </div>
+                </div>
+
+                <div class="skill sketch-up">
+                    <div class="title">Sketch-up</div>
+                    <div class="bg-bar">
+                        <div class="percent bar"></div>
+                        <div class="percent txt">75%</div>
+                    </div>
+                </div>
+
+                <div class="skill keyshot">
+                    <div class="title">Keyshot</div>
+                    <div class="bg-bar">
+                        <div class="percent bar"></div>
+                        <div class="percent txt">75%</div>
+                    </div>
+                </div>
+
+                <div class="skill sketch">
+                    <div class="title">Sketch</div>
+                    <div class="bg-bar">
+                        <div class="percent bar"></div>
+                        <div class="percent txt">90%</div>
+                    </div>
+                </div>
+
+                <div class="skill prototyping">
+                    <div class="title">Prototyping</div>
+                    <div class="bg-bar">
+                        <div class="percent bar"></div>
+                        <div class="percent txt">95%</div>
+                    </div>
+                </div>
+
+                <div class="skill user-research">
+                    <div class="title">User Research</div>
+                    <div class="bg-bar">
+                        <div class="percent bar"></div>
+                        <div class="percent txt">90%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <h3>CONTACT</h3>
+
+            <ul class="person-info">
+                <li class="location">
+                    <img class="icon" src="images/location.jpg" alt="Location">
+                    Beijing, China
+                </li>
+                <li class="phone">
+                    <img class="icon" src="images/phone.jpg" alt="Phone">
+                    Phone: +86 13621030191
+                </li>
+                <li class="email">
+                    <img class="icon" src="images/mail.jpg" alt="Email">
+                    Email: sixue_cheng@126.com
+                </li>
+            </ul>
+            
+            <div class="email-now">
+                <div class="txt">You could also contact me right now. : )</div>
+                <a href="mailto:sixue_cheng@126.com">
+                    <div class="send-email-btn">
+                        <img class="icon" src="images/send_message.png" alt="Send">
+
+                        Send Message
+                    </div>
+                </a>
+            </div>
+        </section>
     </div>
-
-    <%- include('ejs/footer'); %>
 
     <!-- Plugins: 插件暂时没有打包到一起，一是打包顺序问题，二是准备建立一个CDN插件库，模块化 -->
     <script src="scripts/plugins/jquery-1.12.4.min.js"></script>
     <script src="scripts/plugins/jquery.mousewheel.min.js"></script>
     <script src="scripts/plugins/jquery.scrollTo.min.js"></script>
-    <script src="scripts/plugins/soundjs-NEXT.min.js"></script>
-    <script src="scripts/plugins/preloadjs-NEXT.min.js"></script>
     <script src="scripts/plugins/TweenMax.min.js"></script>
     <script src="scripts/plugins/ScrollMagic.min.js"></script>
     <script src="scripts/plugins/animation.gsap.min.js"></script>

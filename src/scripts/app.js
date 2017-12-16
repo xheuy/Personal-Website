@@ -1,8 +1,8 @@
 /*
  * @Author: Mr.B 
  * @Date: 2017-11-27 12:17:37 
- * @Last Modified by: Mr.B
- * @Last Modified time: 2017-12-13 12:16:19
+ * @Last Modified by: Nokey
+ * @Last Modified time: 2017-12-16 12:21:13
  */
 'use strict'; 
 
@@ -54,45 +54,19 @@ import './modules/pf_RAF'
     /**
      * Your code here
      */
+    // Nav
+    $('#nav_btn').click((e)=>{
+        $('body').toggleClass('nav-open')
+    })
 
 
-
-    /**************      Tool     **************/
+    /***********    Tool     ***********/
     function getBCR(ele, type) {
         if (type !== undefined) {
             return ele.getBoundingClientRect()[type];
         } else {
             return ele.getBoundingClientRect();
         }
-    }
-
-    /**
-     * 水平垂直居中某一容器中的元素，现代浏览器可以用 background 或 flex 布局
-     * 
-     * @param {jquery dom array} ele_boxs 
-     */
-    function centerEle(ele_boxs) {
-        ele_boxs.each(function(i, e){
-            var
-                container = $(this),
-                ele = container.find('.center-this'),
-                eleRatio = ele.data('width') / ele.data('height'),
-                containerRatio = container.outerWidth() / container.outerHeight();
-        
-            if (eleRatio >= containerRatio) {
-                ele.css({ "width": "auto", "height": "100%" });
-            } else {
-                ele.css({ "width": "100%", "height": "auto" });
-            }
-        
-            ele.css({
-                "position": "absolute",
-                "top": "50%",
-                "left": "50%",
-                "margin-top": -1 * ele.height() * 0.5 + "px",
-                "margin-left": -1 * ele.width() * 0.5 + "px"
-            });
-        });
     }
 
 }(jQuery, window));
