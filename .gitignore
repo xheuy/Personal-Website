@@ -20,4 +20,4 @@ build/
 rev/
 package-lock.json
 *.bkp
-CNAME
+docs/CNAME
