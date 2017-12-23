@@ -2,17 +2,20 @@
 <html lang="en">
 
 <head>
-    <%- include('ejs/head', {title: 'Cissy'}); %>
+    <%- include('./ejs/head', {
+        title: 'Cissy',
+        css: 'styles/app.css'
+    }); %>
 </head>
 
-<body class="">
+<body id="app" class="home">
     <!-- Nav -->
     <div id="nav_btn" class="nav-btn"></div>
-    <ul class="nav-menu">
-        <li>HOME</li>
-        <li>PORTFOLIO</li>
-        <li>ABOUT ME</li>
-        <li>COTACT</li>
+    <ul id="nav_menu" class="nav-menu">
+        <li data-target="main-content">HOME</li>
+        <li data-target="portfolio">PORTFOLIO</li>
+        <li data-target="about-me">ABOUT ME</li>
+        <li data-target="contact">CONTACT</li>
     </ul>
 
     <!-- Profile -->
@@ -34,39 +37,56 @@
         </div>
 
         <!-- PORTFOLIO -->
-        <section class="portfolio-wrap">
+        <section class="portfolio">
             <h3>PORTFOLIO</h3>
             <div class="box left">
-                <div class="work no-1">
-                    <div class="title-wrap">
-                        Inductive Smart Headset
+                <a href="Inductive-Smart-Headset.html">
+                    <div class="work no-1">
+                        <div class="color-bg"></div>
+                        <div class="title-wrap">
+                            Inductive Smart Headset
+                        </div>
                     </div>
-                </div>
-                <div class="work no-2">
-                    <div class="title-wrap">
-                        Walking Dog Product design<br/>Combine with VR Technology
+                </a>
+                <a href="Walking-Dog-Product-design-Combine-with-VR-Technology.html">
+                    <div class="work no-2">
+                        <div class="color-bg"></div>
+                        <div class="title-wrap">
+                            Walking Dog Product design<br/>Combine with VR Technology
+                        </div>
                     </div>
-                </div>
-                <div class="work no-3">
+                </a>
+                <a href="#">
+                    <div class="work no-3">
 
-                </div>
+                    </div>
+                </a>
             </div>
             <div class="box right">
-                <div class="work no-4">
-                    <div class="title-wrap">
-                        Universal Product Design<br/>for European Refugees
+                <a href="Universal-Product-Design-for-European-Refugees.html">
+                    <div class="work no-4">
+                        <div class="color-bg"></div>
+                        <div class="title-wrap">
+                            Universal Product Design<br/>for European Refugees
+                        </div>
                     </div>
-                </div>
-                <div class="work no-5">
-                    <div class="title-wrap">
-                        Food Cooking Management<br/>System for Family
+                </a>
+                <a href="Food-Cooking-Management-System.html">
+                    <div class="work no-5">
+                        <div class="color-bg"></div>
+                        <div class="title-wrap">
+                            Food Cooking Management<br/>System
+                        </div>
                     </div>
-                </div>
-                <div class="work no-6">
-                    <div class="title-wrap">
-                        Other Projects
+                </a>
+                <a href="Other-Projects.html">
+                    <div class="work no-6">
+                        <div class="color-bg"></div>
+                        <div class="title-wrap">
+                            Other Projects
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 

@@ -2,7 +2,7 @@
  * @Author: Mr.B 
  * @Date: 2017-11-27 12:17:37 
  * @Last Modified by: Nokey
- * @Last Modified time: 2017-12-16 12:21:13
+ * @Last Modified time: 2017-12-23 16:40:45
  */
 'use strict'; 
 
@@ -54,10 +54,43 @@ import './modules/pf_RAF'
     /**
      * Your code here
      */
-    // Nav
+
+    /***********    Nav     ***********/
     $('#nav_btn').click((e)=>{
         $('body').toggleClass('nav-open')
     })
+    $('#nav_menu').on('click', 'li', (e)=>{
+        let item = $(e.target),
+            class_name = item.data('target')
+
+        _win.scrollTo('.'+class_name, {
+            duration: 300,
+            offset: -20
+        })
+
+        // hide nav
+        $('body').removeClass('nav-open')
+    })
+
+    /***********    Skill Bar     ***********/
+    var sm_controller = new ScrollMagic.Controller()
+
+    new ScrollMagic.Scene({
+            triggerElement: '.photoshop'
+        })
+        .on("start", function (event) {
+            // $(event.target.triggerElement()).addClass('active')
+            TweenMax.staggerTo('.skills-box .skill', 1, {
+                width: (index, target)=>{
+                    // console.log(index, target)
+                    var ele = $(target)
+
+                    !ele.hasClass('active') && ele.addClass('active')
+                }
+            }, 0.5)
+        })
+        .addTo(sm_controller);
+    
 
 
     /***********    Tool     ***********/

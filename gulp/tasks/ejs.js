@@ -2,7 +2,7 @@
  * @Author: Nokey 
  * @Date: 2017-12-12 23:16:08 
  * @Last Modified by: Nokey
- * @Last Modified time: 2017-12-12 23:38:43
+ * @Last Modified time: 2017-12-23 17:33:23
  */
 'use strict'; 
 
@@ -37,9 +37,7 @@ module.exports = ()=>{
       return filename;  
     }
 
-    return gulp.src(['./src/*.ejs', './src/pages/*.ejs'], { 
-            base: 'src'
-        })
+    return gulp.src(['./src/*.ejs', './src/pages/*.ejs'])
         .pipe(plumber())
         .pipe(ejs({
             msg: 'Hello Gulp!'
