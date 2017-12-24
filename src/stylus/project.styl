@@ -34,12 +34,13 @@ x-reset()
 
 .T__section
     width 100%
-    max-width 960px
+    max-width 1000px
     margin 0 auto
     padding 25px 1em
 
     h1
         font-size 3.6rem
+        line-height 1.2em
         color #F17E44
         text-align center
         margin 25px 0
@@ -47,6 +48,7 @@ x-reset()
 
     h2
         font-size 2.2rem
+        line-height 1.2em
         color #8d8d8d
         margin 50px 0 25px
         font-family 'Krungthep'
@@ -56,24 +58,26 @@ x-reset()
 
     h3
         font-size 1.8rem
+        line-height 1.2em
         color #8d8d8d
         margin 12px 0
         font-family 'Helvetive'
 
     h4
         font-size 1.6rem
+        line-height 1.2em
         color #8d8d8d
         margin-bottom 1em
 
     p
         font-size 1.6rem
-        line-height 1.4em
+        line-height 1.2em
         color #8d8d8d
         font-family 'Helvetive'
 
     .T__wrap
         position relative
-        margin 18px 0
+        margin 25px 0
 
         .T__wrap-bg
             width 100%
@@ -157,3 +161,71 @@ x-reset()
 
             > *
                 width 100%
+
+    .layout-3
+        display flex
+        justify-content space-between
+
+        > div
+            width 31%
+            display flex
+            flex-direction column
+
+            h3
+                height 2.2em
+
+            > *
+                width 100%
+
+            .metas-col-5
+                display flex
+
+                > p
+                    width 20%
+                    text-align center
+                    font-size 1.2rem
+                    margin-top 1em
+
+            .metas-col-4
+                display flex
+
+                > p
+                    width 25%
+                    text-align center
+                    font-size 1.2rem
+                    margin-top 1em
+
+    .list
+        > li
+            display flex
+            align-items center
+            margin 3em 0
+
+            &:before
+                content: ''
+                display block
+                background-color #E67C38
+                width 15px
+                height 15px
+                border-radius 50%
+                margin-right 15px
+
+    .layout-4
+        display flex
+        justify-content space-between
+
+        > div
+            width 31.5%
+            text-align center
+
+            img
+                height 25%
+
+            p
+                text-align justify
+
+    .col-2
+        display flex
+
+        > h3
+            width 50%
