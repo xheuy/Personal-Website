@@ -109,6 +109,43 @@ img {
   background-attachment: fixed;
   margin-bottom: 25px;
 }
+.T__header .flex-wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.T__header .top-title {
+  margin-left: 5%;
+  font-family: 'Krungthep';
+  font-size: 3.2rem;
+  padding: 0.5em 0.8em;
+  background-color: #f38d59;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.T__header .top-desc {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  width: 15%;
+}
 .T__section {
   width: 100%;
   max-width: 1000px;
@@ -122,6 +159,9 @@ img {
   text-align: center;
   margin: 25px 0;
   font-family: 'Krungthep';
+}
+.T__section h1.blue {
+  color: #97beed;
 }
 .T__section h2 {
   font-size: 2.2rem;
@@ -159,24 +199,161 @@ img {
 .T__section .T__wrap .T__wrap-bg {
   width: 100%;
 }
-.work-5 header {
-  background-image: url("../images/work5/top-bg.jpg");
+.work-1 p,
+.work-1 h3 {
+  color: #3e3e3e;
 }
-.work-5 header .flex-wrap {
-  width: 100%;
-  height: 100%;
+.work-1 h3 {
+  margin-top: 2em;
+}
+.work-1 header {
+  background-image: url("../images/work1/top-bg.jpg");
+}
+.work-1 header .top-mobile {
+  height: 60%;
+}
+.work-1 .layout-1 {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: box;
   display: flex;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.work-1 .layout-1 img {
+  width: 100%;
+}
+.work-1 .layout-1 p {
+  text-align: justify;
+  margin-top: 10px;
+}
+.work-1 .layout-1 div:nth-child(1) {
+  width: 26.5%;
+}
+.work-1 .layout-1 div:nth-child(2) {
+  width: 31%;
+}
+.work-1 .layout-1 div:nth-child(3) {
+  width: 39%;
+}
+.work-1 .layout-2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.work-1 .layout-2 p {
+  width: 50%;
+  text-align: justify;
+}
+.work-1 .layout-2 img {
+  width: 45%;
+}
+.work-1 .layout-3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.work-1 .layout-3 img {
+  width: 30%;
+}
+.work-1 .layout-3 p {
+  width: 65%;
+  text-align: justify;
+}
+.work-1 .layout-4 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.work-1 .layout-4 img {
+  width: 52%;
+}
+.work-1 .layout-4 p {
+  width: 45%;
+  text-align: justify;
+}
+.work-1 .layout-5 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.work-1 .layout-5 img {
+  width: 40%;
+}
+.work-1 .layout-5 p {
+  width: 57%;
+  text-align: justify;
+}
+.work-1 .layout-6 {
+  color: #8d8d8d;
+  font-size: 1.2rem;
+}
+.work-1 .layout-6 em {
+  font-weight: bold;
+  color: #3e3e3e;
+}
+.work-1 .layout-7 {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -184,23 +361,55 @@ img {
   -webkit-align-items: center;
   align-items: center;
 }
+.work-1 .layout-7 img {
+  width: 10%;
+}
+.work-1 .layout-7 p {
+  width: 86%;
+}
+.work-1 .blue-txt {
+  font-size: 3.6rem;
+  color: #98bfee;
+  padding-left: 5%;
+  line-height: 2em;
+}
+.work-1 .list-1 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.work-1 .layout-8 {
+  margin: 1em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.work-1 .layout-8 img {
+  height: 25px;
+}
+.work-1 .layout-8 p {
+  width: 95%;
+  font-size: 1.4rem;
+}
+.work-5 header {
+  background-image: url("../images/work5/top-bg.jpg");
+}
 .work-5 header .top-mobile {
   height: 80%;
-}
-.work-5 header .top-title {
-  margin-left: 5%;
-  font-family: 'Krungthep';
-  font-size: 3.2rem;
-  padding: 0.5em 0.8em;
-  background-color: #f38d59;
-  color: #fff;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-}
-.work-5 header .top-desc {
-  position: absolute;
-  right: 40px;
-  bottom: 30px;
-  width: 15%;
 }
 .work-5 .txt1 {
   position: absolute;
