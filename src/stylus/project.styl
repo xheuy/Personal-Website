@@ -2,7 +2,7 @@
  * @Author: Nokey 
  * @Date: 2017-12-23 18:15:33 
  * @Last Modified by: Nokey
- * @Last Modified time: 2017-12-23 22:13:25
+ * @Last Modified time: 2017-12-29 00:00:34
  */
 
 @import 'nib'
@@ -47,6 +47,7 @@ x-reset()
         background-color #F38D59
         color: #fff
         text-shadow 1px 1px 5px rgba(0,0,0,.5)
+        text-align center
 
     .top-desc
         position absolute
@@ -60,52 +61,56 @@ x-reset()
     margin 0 auto
     padding 25px 1em
 
-    h1
-        font-size 3.6rem
-        line-height 1.2em
-        color #F17E44
-        text-align center
-        margin 25px 0
-        font-family 'Krungthep'
-
-        &.blue
-            color #97BEED
-
-    h2
-        font-size 2.2rem
-        line-height 1.2em
-        color #8d8d8d
-        margin 50px 0 25px
-        font-family 'Krungthep'
-
-        &.orange
-            color #FF8B31
-
-    h3
-        font-size 1.8rem
-        line-height 1.2em
-        color #8d8d8d
-        margin 12px 0
-        font-family 'Helvetive'
-
-    h4
-        font-size 1.6rem
-        line-height 1.2em
-        color #8d8d8d
-        margin-bottom 1em
-
-    p
-        font-size 1.6rem
-        line-height 1.2em
-        color #8d8d8d
-        font-family 'Helvetive'
-
     .T__wrap
         position relative
         margin 25px 0
 
         .T__wrap-bg
             width 100%
+
+h1
+    font-size 4.2rem
+    line-height 1.2em
+    color #F17E44
+    text-align center
+    margin 25px 0
+    font-family 'Krungthep'
+
+    &.blue
+        color #97BEED
+
+h2
+    font-size 2.2rem
+    line-height 1.2em
+    color #8d8d8d
+    margin 50px 0 25px
+    font-family 'Krungthep'
+
+    &.orange
+        color #FF8B31
+
+h3
+    font-size 1.8rem
+    line-height 1.2em
+    color #8d8d8d
+    margin 12px 0
+    font-family 'Helvetive'
+
+h4
+    font-size 1.6rem
+    line-height 1.2em
+    color #8d8d8d
+    margin-bottom 1em
+
+p
+    font-size 1.6rem
+    line-height 1.4em
+    color #8d8d8d
+    font-family 'Helvetive'
+    text-align justify
+
+em
+    font-weight bold
 
 
 // custom
@@ -229,6 +234,127 @@ x-reset()
         p
             width 95%
             font-size 1.4rem
+
+.work-4
+    header
+        background-image url(../images/work4/bg.jpg)
+
+    h1
+        font-size 4.2rem
+        margin 8px 0
+        color: #6D6D6D
+
+    .subtitle
+        font-size 2rem
+        color #FFBC00
+        text-align center
+        font-family 'Krungthep'
+        margin-bottom 40px
+
+    h2
+        color #6B6B6A
+
+    h3
+        font-weight bold
+        color #FFBC00
+
+    .layout-1
+        display flex
+        justify-content space-between
+        align-items center
+
+        img
+            width 16%
+
+        p
+            width 80%
+
+    .layout-2
+        display flex
+        justify-content space-between
+
+        > div
+            width 48%
+
+        img
+            width 100%
+            margin-top 18px
+
+    .layout-3
+        display flex
+        justify-content space-between
+        align-items center
+
+        img
+            width 20%
+
+        p
+            width 77%
+
+    .layout-4
+        display flex
+        justify-content space-between
+        margin-bottom 50px
+
+        p:nth-child(1)
+            width 40%
+            padding-right 6%
+
+        p:nth-child(2)
+            width 30%
+            padding-right 4%
+
+        p:nth-child(3)
+            width 30%
+            padding-left 4%
+
+    .layout-5
+        display flex
+        justify-content space-between
+
+        img
+            width 22%
+
+        p
+            width 75%
+
+    .layout-6
+        display flex
+        justify-content space-between
+
+        > *
+            width 23%
+
+        p
+            text-align: left
+
+    .layout-7
+        display flex
+        justify-content space-between
+
+        > div
+            width 45%
+
+.work-2
+    header
+        background-image url(../images/work2/bg.jpg)
+        background-size auto 100%
+
+    h1
+        color #6D6D6D
+
+    h2, h3
+        color #FFBC00
+
+    .layout-1
+        display flex
+        justify-content space-between
+
+        img
+            width 60%
+
+        p
+            width 38%
 
 
 .work-5
