@@ -356,6 +356,9 @@ body {
 .portfolio .work.no-3 {
   padding-top: 83%;
 }
+.portfolio .work.no-3 .title-wrap {
+  top: 25%;
+}
 .portfolio .work.no-4 {
   padding-top: 112.85%;
   background-image: url("../images/p2-black.jpg");
