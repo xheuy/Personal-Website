@@ -355,6 +355,10 @@ body {
 }
 .portfolio .work.no-3 {
   padding-top: 83%;
+  background-image: url("../images/p5-black.jpg");
+}
+.portfolio .work.no-3 .color-bg {
+  background-image: url("../images/p5-color.jpg");
 }
 .portfolio .work.no-3 .title-wrap {
   top: 25%;

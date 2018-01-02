@@ -2,7 +2,7 @@
  * @Author: Nokey 
  * @Date: 2017-12-23 18:15:33 
  * @Last Modified by: Nokey
- * @Last Modified time: 2017-12-30 23:51:00
+ * @Last Modified time: 2018-01-03 00:13:22
  */
 * {
   margin: 0;
@@ -217,6 +217,9 @@ em {
 .work-1 header .top-mobile {
   height: 60%;
 }
+.work-1 header .top-title {
+  background-color: #97beed;
+}
 .work-1 .layout-1 {
   display: -webkit-box;
   display: -moz-box;
@@ -375,8 +378,8 @@ em {
 .work-1 .blue-txt {
   font-size: 3.6rem;
   color: #98bfee;
-  padding-left: 5%;
   line-height: 2em;
+  text-align: center;
 }
 .work-1 .list-1 {
   max-width: 800px;
@@ -590,10 +593,13 @@ em {
   width: 45%;
 }
 .work-2 header {
-  background-image: url("../images/work2/bg.jpg");
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  background-size: auto 100%;
+  background-image: url("../images/work2/bg-2.jpg");
+}
+.work-2 header .top-mobile {
+  height: 60%;
+}
+.work-2 header .top-title {
+  background-color: #ffbc00;
 }
 .work-2 h1 {
   color: #6d6d6d;
