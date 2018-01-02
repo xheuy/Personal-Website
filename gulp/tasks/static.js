@@ -30,7 +30,7 @@ module.exports = ()=>{
         .pipe(gulp.dest('./build/static'))
         .pipe(connect.reload());
 
-    return gulp.src('./src/favicon.png')
+    return gulp.src('./src/favicon.jpg')
         .pipe(gulp.dest('./build'))
         .pipe(connect.reload());
 }
