@@ -413,6 +413,9 @@ em {
   width: 95%;
   font-size: 1.4rem;
 }
+.work-1 .layout-9 {
+  width: 45%;
+}
 .work-4 header {
   background-image: url("../images/work4/bg.jpg");
 }
